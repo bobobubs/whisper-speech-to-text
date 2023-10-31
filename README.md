@@ -33,12 +33,14 @@ To run the script, use the following command:
 python recorder.py
 ```
 
+By default the hotkey to start and end the recording is "alt+x". The program will read in the audio from the first hotkey press to the second hotkey press. After the audio is saved and transcribed, the transcribed audio will be typed out wherever the cursor is currently placed. No need to keep the program shell front and center, the program will continue to monitor the hotkey in the background.
+
 ### Custom Hotkey
 
 You can specify a custom hotkey for toggling recording:
 
 ```bash
-python recorder.py --hotkey 'alt+x'
+python recorder.py --hotkey '<key-1>+<key-2>'
 ```
 
 ## Class `AudioRecorder`
