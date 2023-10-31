@@ -23,7 +23,7 @@ You can install these packages using pip:
 
 This program requires FFMPEG. The easiest way to install it on Windows is using Chocolatey, a package manager. Here’s how:
 
-- install Chocolatey by following the instructions on the official website.
+- install Chocolatey by following the instructions on the [official website](https://chocolatey.org/install).
 - Once Chocolatey is installed, open a command prompt or PowerShell as an administrator.
 - Run the following command to install FFMPEG:
 
