@@ -19,6 +19,10 @@ This script records audio using a hotkey, saves it as a WAV file, and then trans
 
 You can install these packages using pip:
 
+```bash
+pip install -r requirements.txt
+```
+
 ### ffmpeg
 
 This program requires FFMPEG. The easiest way to install it on Windows is using Chocolatey, a package manager. Here’s how:
@@ -29,10 +33,6 @@ This program requires FFMPEG. The easiest way to install it on Windows is using 
 
 ```bash
 choco install ffmpeg
-```
-
-```bash
-pip install -r requirements.txt
 ```
 
 Now, FFMPEG will be installed and automatically added to your system's PATH.
