@@ -1,6 +1,6 @@
 <!-- @format -->
 
-# OpenAI Whisper to Speech Transcriber
+# OpenAI Whisper Speech-to-Text Transcriber
 
 ## Overview
 
