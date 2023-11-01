@@ -1,0 +1,6 @@
+pyaudio
+wave
+keyboard
+whisper
+pyautogui
+argparse
