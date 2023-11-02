@@ -1,6 +1,6 @@
 pyaudio
 wave
 keyboard
-whisper
+openai-whisper
 pyautogui
 argparse
