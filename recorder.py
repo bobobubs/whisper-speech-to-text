@@ -16,6 +16,7 @@ class AudioRecorder:
         self.frames = []
         self.recording = False
         self.model = whisper.load_model("base")
+        self.language = "English"
         self.p = pyaudio.PyAudio()
 
     def toggle_recording(self):
@@ -43,7 +44,11 @@ class AudioRecorder:
         self.save_audio()
 
     def transcribe_recording(self):
-        result = self.model.transcribe(self.filename)
+        options = {
+        "language": self.language, 
+        "task": "transcribe"
+        }
+        result = self.model.transcribe(self.filename, **options)
         return result["text"]
 
     def save_audio(self):
@@ -60,15 +65,23 @@ class AudioRecorder:
     def set_hotkey(self, hotkey):
         keyboard.add_hotkey(hotkey, self.toggle_recording, suppress=True)
         keyboard.wait('esc')
+    
+    def set_language(self, language):
+        self.language = language
+        print("The language is currently set to: ", self.language)
 
 
 def main():
     parser = argparse.ArgumentParser(description='Audio Recorder and Transcriber')
     parser.add_argument('--hotkey', type=str, default='alt+x', help='Hotkey to toggle recording')
+    parser.add_argument('--language', type=str, default='en', help='Language for transcription')
     args = parser.parse_args()
 
     recorder = AudioRecorder()
+    recorder.set_language(args.language)
     recorder.set_hotkey(args.hotkey)
+    
+
 
 if __name__ == "__main__":
     main()
