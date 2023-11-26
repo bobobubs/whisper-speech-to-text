@@ -64,7 +64,9 @@ class AudioRecorder:
 
     def set_hotkey(self, hotkey):
         keyboard.add_hotkey(hotkey, self.toggle_recording, suppress=True)
-        keyboard.wait('esc')
+        print(f"to begin a recording press {hotkey}, to end the recording press {hotkey} again.")
+        print("press alt+c to halt the program")
+        keyboard.wait('alt+c')
     
     def set_language(self, language):
         self.language = language
