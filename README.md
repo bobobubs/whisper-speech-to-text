@@ -91,6 +91,15 @@ Now supported languages are:
 - Chinese (zh)
 - Traditional Chinese (zh-tw)
 
+### I'm too lazy to type out the command every time
+
+Fine, for Windows, double click on the `run.bat` file, or double click `執行.bat` for Traditional Chinese.
+
+#### Run on startup
+
+1. Open the run dialog by pressing `Win+R`.
+2. Type `shell:startup` and press enter.
+3. Create a shortcut to `run.bat` (or `執行.bat`) in the folder that opens.
 
 ## Class `AudioRecorder`
 
