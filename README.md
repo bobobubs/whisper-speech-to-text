@@ -6,6 +6,10 @@
 
 This script records audio using a hotkey, saves it as a WAV file, and then transcribes it into text using the OpenAI Whisper model. The transcribed text is automatically typed where your cursor is.
 
+## Screenshots
+
+![Screenshot](screenshot.png)
+
 ## Requirements
 
 - Python 3.x
@@ -56,6 +60,37 @@ You can specify a custom hotkey for toggling recording:
 ```bash
 python recorder.py --hotkey '<key-1>+<key-2>'
 ```
+
+### Custom language
+
+You can specify a custom language for transcribing:
+
+```bash
+python recorder.py --language '<language>'
+```
+
+### Custom model
+
+You can specify a model for transcribing:
+
+```bash
+python recorder.py --model '<model-size>'
+```
+
+### Console Language
+
+You can specify a language for the console output:
+
+```bash
+python recorder.py --console '<language>'
+```
+
+Now supported languages are:
+
+- English (en)
+- Chinese (zh)
+- Traditional Chinese (zh-tw)
+
 
 ## Class `AudioRecorder`
 
