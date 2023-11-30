@@ -1,0 +1,1 @@
+python recorder.py --console zh-tw
